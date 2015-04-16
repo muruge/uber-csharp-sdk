@@ -8,6 +8,8 @@
 * All methods return an instance of UberResponse<T> where T is the serialized Uber response data. An UberResponse also contains an Error property which will contain information in the event of an error being returned by the underlying API.
 * Contains an UberSandboxClient for submitting requests against the Uber API sandbox.
 
+***Note*** I built this in my spare time for a bit of fun, if you've found any bugs or you'd like to contribute please get involved!
+
 ## Authentication
 
 When making requests on behalf of a user via OAuth, ensure you understand [scopes.](https://developer.uber.com/v1/api-reference/#scopes)
