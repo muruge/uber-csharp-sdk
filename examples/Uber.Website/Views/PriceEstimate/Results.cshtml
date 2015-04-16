@@ -1,0 +1,20 @@
+﻿@model Uber.SDK.Models.PriceEstimateCollection
+@{
+    ViewBag.Title = "Price estimates";
+}
+<h2>@ViewBag.Title</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Estimate</th>
+    </tr>
+@foreach (var p in Model.PriceEstimates)
+{
+    <tr>
+        <td>@p.ProductId</td>
+        <td>@p.DisplayName</td>
+        <td>@p.Estimate</td>
+    </tr>
+}
+</table>

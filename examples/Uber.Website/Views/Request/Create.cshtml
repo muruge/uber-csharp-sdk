@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Make request";
+}
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <label for="startlat">Start latitude</label>
+        <input type="text" name="productId" value="@ViewBag.ProductId" />
+    </div>
+    <div>
+        <label for="startlat">Start latitude</label>
+        <input type="text" name="startlat" value="-37.8602828" />
+    </div>
+    <div>
+        <label for="startlng">Start longitude</label>
+        <input type="text" name="startlng" value="145.079616" />
+    </div>
+    <div>
+        <label for="endlat">End latitude</label>
+        <input type="text" name="endlat" value="-38.3436789" />
+    </div>
+    <div>
+        <label for="endlng">End longitude</label>
+        <input type="text" name="endlng" value="144.7430275" />
+    </div>
+    <div>
+        <input type="submit" value="Go" />
+    </div>
+}

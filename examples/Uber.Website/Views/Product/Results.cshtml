@@ -1,0 +1,22 @@
+﻿@model Uber.SDK.Models.ProductCollection
+@{
+    ViewBag.Title = "Products";
+}
+<h2>@ViewBag.Title</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+    </tr>
+@foreach (var t in Model.Products)
+{
+    <tr>
+        <td>@t.ProductId</td>
+        <td>@t.DisplayName</td>
+        <td>@t.Description</td>
+        <td><img src="@t.Image" /></td>
+    </tr>
+}
+</table>

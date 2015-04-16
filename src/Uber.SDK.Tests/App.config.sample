@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="UBER.BaseUri" value="https://sandbox-api.uber.com/" />
+    <add key="UBER.ClientId" value="" />
+    <add key="UBER.ClientSecret" value="" />
+    <add key="UBER.ServerToken" value="" />
+  </appSettings>
+</configuration>

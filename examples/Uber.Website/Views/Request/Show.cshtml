@@ -1,0 +1,49 @@
+﻿@model Uber.SDK.Models.RequestDetails
+@{
+    ViewBag.Title = "Request details";
+}
+<h2>@ViewBag.Title</h2>
+@if (Model == null)
+{
+    <p>Couldn't get user activity...</p>
+}
+else
+{
+    <p><span class="wd">ID</span>@Model.RequestId</p>
+    <p><span class="wd">Status</span>@Model.Status</p>
+    <p><span class="wd">ETA</span>@(Model.ETA == null ? "NA" : Model.ETA.ToString())</p>
+    if (Model.Driver != null)
+    {
+        <p><span class="wd">Driver</span>@Model.Driver.Name</p>
+        <p><img src="@Model.Driver.PictureUrl" /></p>
+    }
+    else
+    {
+        <p><span class="wd">Driver</span>NA</p>
+    }
+    if (Model.Vehicle != null)
+    {
+        <p><span class="wd">Vehicle</span>@Model.Vehicle.Make @Model.Vehicle.Model</p>
+        <p><img src="@Model.Vehicle.PictureUrl" /></p>
+    }
+    else
+    {
+        <p><span class="wd">Vehicle</span>NA</p>
+    }
+    if (Model.Location != null)
+    {
+        <p><span class="wd">Latitude</span>@Model.Location.Latitude</p>
+        <p><span class="wd">Longitude</span>@Model.Location.Longitude</p>
+    }
+    else
+    {
+        <p><span class="wd">Location</span>NA</p>
+    }
+    <p>@Html.ActionLink("Cancel", "Cancel", "Request", new { requestId = Model.RequestId }, null)</p>
+    <p>@Html.ActionLink("Change to processing", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "processing" }, null)</p>
+    <p>@Html.ActionLink("Change to accepted", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "accepted" }, null)</p>
+    <p>@Html.ActionLink("Change to arriving", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "arriving" }, null)</p>
+    <p>@Html.ActionLink("Change to in progress", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "in_progress" }, null)</p>
+    <p>@Html.ActionLink("Change to driver cancelled", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "driver_canceled" }, null)</p>
+    <p>@Html.ActionLink("Change to completed", "UpdateStatus", "Request", new { requestId = Model.RequestId, status = "completed" }, null)</p>
+}

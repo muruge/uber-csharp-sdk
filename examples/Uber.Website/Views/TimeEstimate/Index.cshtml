@@ -1,0 +1,19 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Time estimate";
+}
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <label for="startlat">Start latitude</label>
+        <input type="text" name="startlat" value="-37.8602828" />
+    </div>
+    <div>
+        <label for="startlng">Start longitude</label>
+        <input type="text" name="startlng" value="145.079616" />
+    </div>
+    <div>
+        <input type="submit" value="Go" />
+    </div>
+}

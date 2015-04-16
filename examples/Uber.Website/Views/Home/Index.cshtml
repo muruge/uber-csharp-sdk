@@ -1,0 +1,12 @@
+﻿@model string
+@{
+    ViewBag.Title = "Home";
+}
+<p>Get a @Html.ActionLink("price estimate.", "Index", "PriceEstimate")</p>
+<p>Get a @Html.ActionLink("time estimate.", "Index", "TimeEstimate")</p>
+<p>View some @Html.ActionLink("products.", "Index", "Product")</p>
+<p>View your @Html.ActionLink("user profile.", "Index", "User")</p>
+<p>View your @Html.ActionLink("requests.", "Index", "Request")</p>
+<p>Make a @Html.ActionLink("request.", "Create", "Request")</p>
+<p>Haven't authenticated yet?</p>
+<p>@Html.ActionLink("Authenticate", "Index", "Auth")</p>

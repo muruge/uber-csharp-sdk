@@ -1,0 +1,7 @@
+﻿body { font-family:arial; font-size:13px }
+a, a:hover, a:visited { color:#1fbad6 }
+form div { margin-bottom:10px }
+form label { display:inline-block; width:120px }
+table { border-collapse:collapse }
+table th, table td {padding: 10px 20px;border: 1px solid #DDD; text-align:center }
+span.wd { display: inline-block;width: 80px; font-weight:bold }

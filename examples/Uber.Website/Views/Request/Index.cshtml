@@ -1,0 +1,30 @@
+﻿@using Uber.Website.Helpers
+@model Uber.SDK.Models.UserActivity
+@{
+    ViewBag.Title = "User activity";
+}
+<h2>@ViewBag.Title</h2>
+@if (Model == null)
+{
+    <p>Couldn't get user activity...</p>
+}
+else
+{
+    if (Model.History.Any())
+    {
+        foreach (var h in Model.History)
+        {
+            <p><span class="wd">Requested</span>@DateTimeHelper.UnixToDateTime(h.RequestTime)</p>  
+            <p><span class="wd">Status</span>@h.Status</p>
+            <p><span class="wd">Start time</span>@DateTimeHelper.UnixToDateTime(h.StartTime)</p>
+            <p><span class="wd">End time</span>@DateTimeHelper.UnixToDateTime(h.EndTime)</p>
+            <p><span class="wd">Distance</span>@h.Distance</p>
+            <p>@Html.ActionLink("View request", "Show", "Request", new { requestId = h.Id }, null)</p>
+            <p>@Html.ActionLink("View map", "Map", "Request", new { requestId = h.Id }, null)</p>
+        }
+    }
+    else
+    {
+        <p>User has no history...</p>
+    }
+}

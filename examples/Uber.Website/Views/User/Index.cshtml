@@ -1,0 +1,17 @@
+﻿@model Uber.SDK.Models.UserProfile
+@{
+    ViewBag.Title = "User";
+}
+<h2>@ViewBag.Title</h2>
+@if (Model == null)
+{
+    <p>Couldn't get user profile...</p>
+}
+else
+{
+    <p>Found user profile:</p>
+    <p><img src="@Model.Picture" /></p>
+    <p><span class="wd">ID</span>@Model.Id</p>
+    <p><span class="wd">Email</span>@Model.Email</p>
+    <p><span class="wd">Name</span>@Model.FirstName @Model.LastName</p>
+}

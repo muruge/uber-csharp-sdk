@@ -1,0 +1,14 @@
+﻿@model Uber.SDK.Models.RequestMap
+@{
+    ViewBag.Title = "Request map";
+}
+<h2>@ViewBag.Title</h2>
+@if (Model == null)
+{
+    <p>Couldn't get map...</p>
+}
+else
+{
+    <p><span class="wd">ID</span>@Model.RequestId</p>
+    <p><img src="@Model.Href"/></p>
+}

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E611AFBE-FE89-421A-8605-B87A73CB9214}"
+	ProjectSection(SolutionItems) = preProject
+		Plan.md = Plan.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{1B607510-8D5A-4E4D-AB39-B60FB9CCDA73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D6202708-2509-4869-839E-A95484DF2A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uber.Website", "..\examples\Uber.Website\Uber.Website.csproj", "{49D9932B-2404-408B-843E-CF72774D29A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uber.ConsoleApp", "..\examples\Uber.ConsoleApp\Uber.ConsoleApp.csproj", "{4B6D4D4E-60EC-4031-A062-100E277DDF6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BAD6CC5C-DB6A-4D1E-9E2B-1F95BBFBDD5C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uber.SDK.IntegrationTests", "Uber.SDK.Tests\Uber.SDK.IntegrationTests.csproj", "{B8F46660-61FC-480F-B14D-CF83742B8AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uber.SDK", "Uber.SDK\Uber.SDK.csproj", "{AEF1E290-D236-4C97-8BF2-04C60EB5248F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49D9932B-2404-408B-843E-CF72774D29A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D9932B-2404-408B-843E-CF72774D29A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D9932B-2404-408B-843E-CF72774D29A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D9932B-2404-408B-843E-CF72774D29A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B6D4D4E-60EC-4031-A062-100E277DDF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B6D4D4E-60EC-4031-A062-100E277DDF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B6D4D4E-60EC-4031-A062-100E277DDF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B6D4D4E-60EC-4031-A062-100E277DDF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F46660-61FC-480F-B14D-CF83742B8AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F46660-61FC-480F-B14D-CF83742B8AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F46660-61FC-480F-B14D-CF83742B8AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F46660-61FC-480F-B14D-CF83742B8AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF1E290-D236-4C97-8BF2-04C60EB5248F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF1E290-D236-4C97-8BF2-04C60EB5248F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF1E290-D236-4C97-8BF2-04C60EB5248F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF1E290-D236-4C97-8BF2-04C60EB5248F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49D9932B-2404-408B-843E-CF72774D29A6} = {1B607510-8D5A-4E4D-AB39-B60FB9CCDA73}
+		{4B6D4D4E-60EC-4031-A062-100E277DDF6A} = {1B607510-8D5A-4E4D-AB39-B60FB9CCDA73}
+		{B8F46660-61FC-480F-B14D-CF83742B8AF4} = {D6202708-2509-4869-839E-A95484DF2A8C}
+	EndGlobalSection
+EndGlobal
