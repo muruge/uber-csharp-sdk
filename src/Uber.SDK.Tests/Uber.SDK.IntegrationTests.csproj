@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UberAuthenticationClientTests.cs" />
     <Compile Include="UberClientTests.cs" />
   </ItemGroup>
   <ItemGroup>

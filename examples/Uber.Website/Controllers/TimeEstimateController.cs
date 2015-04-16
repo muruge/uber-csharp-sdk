@@ -16,9 +16,9 @@ namespace Uber.Website.Controllers
         public async Task<ActionResult> Index(float startlat, float startlng)
         {
             var uberClient = UberClientHelper.Get();
-            var prices = await uberClient.GetTimeEstimateAsync(startlat, startlng);
+            var times = await uberClient.GetTimeEstimateAsync(startlat, startlng);
 
-            return View("Results", prices.Data);
+            return View("Results", times.Data);
         }
     }
 }

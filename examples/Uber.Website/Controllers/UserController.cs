@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using Uber.SDK;
 using Uber.Website.Helpers;
 
 namespace Uber.Website.Controllers

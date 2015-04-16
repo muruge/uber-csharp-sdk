@@ -8,8 +8,8 @@ namespace Uber.SDK
 {
     public class UberSandboxClient : UberClient
     {
-        public UberSandboxClient(AccessTokenType tokenType, string token, string clientId, string clientSecret, string baseUri)
-            : base(tokenType, token, clientId, clientSecret, baseUri)
+        public UberSandboxClient(AccessTokenType tokenType, string token)
+            : base(tokenType, token, "https://sandbox-api.uber.com")
         {
         }
 

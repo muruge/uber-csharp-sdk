@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E611AFBE-FE89-421A-8605-B87A73CB9214}"
 	ProjectSection(SolutionItems) = preProject
 		Plan.md = Plan.md
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{1B607510-8D5A-4E4D-AB39-B60FB9CCDA73}"

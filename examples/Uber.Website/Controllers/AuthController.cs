@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using Uber.SDK;
 using Uber.Website.Helpers;
 
 namespace Uber.Website.Controllers
@@ -13,7 +12,7 @@ namespace Uber.Website.Controllers
         {
             var scopes = new List<string> { "profile", "history_lite", "request" };
 
-            var uberClient = UberClientHelper.Get();
+            var uberClient = UberClientHelper.GetAuth();
             var response = uberClient.GetAuthorizeUrl(scopes, Guid.NewGuid().ToString());
 
             return View("Index", (object)response);
@@ -21,8 +20,8 @@ namespace Uber.Website.Controllers
 
         public async Task<ActionResult> Callback(string code)
         {
-            var uberClient = UberClientHelper.Get();
-            var accessToken = await uberClient.GetAccessToken(code, "http://localhost:7090/auth/callback");
+            var uberClient = UberClientHelper.GetAuth();
+            var accessToken = await uberClient.GetAccessTokenAsync(code, "http://localhost:7090/auth/callback");
 
             if (accessToken == null || string.IsNullOrWhiteSpace(accessToken.Value))
             {

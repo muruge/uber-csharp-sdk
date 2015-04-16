@@ -89,7 +89,7 @@ namespace Uber.Website.Controllers
             }
 
             var uberClient = UberClientHelper.Get(auth.Value);
-            var request = await uberClient.GetRequestMap(requestId);
+            var request = await uberClient.GetRequestMapAsync(requestId);
 
             return View(request.Data);
         }
@@ -102,7 +102,7 @@ namespace Uber.Website.Controllers
                 return RedirectToAction("Index", "Auth");
             }
 
-            var uberClient = UberClientHelper.GetSandbox(auth.Value);
+            var uberClient = UberClientHelper.Get(auth.Value);
             await uberClient.UpdateRequestStatus(requestId, status);
 
             return RedirectToAction("Show", new { requestId = requestId });
