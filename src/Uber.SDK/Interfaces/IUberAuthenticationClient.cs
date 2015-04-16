@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Uber.SDK.Models;
 
-namespace Uber.SDK
+namespace Uber.SDK.Interfaces
 {
     public interface IUberAuthenticationClient
     {

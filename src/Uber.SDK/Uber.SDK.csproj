@@ -56,8 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUberAuthenticationClient.cs" />
-    <Compile Include="IUberClient.cs" />
+    <Compile Include="Interfaces\IUberAuthenticationClient.cs" />
+    <Compile Include="Interfaces\IUberClient.cs" />
     <Compile Include="Models\AccessToken.cs" />
     <Compile Include="Models\AccessTokenType.cs" />
     <Compile Include="Models\PriceEstimate.cs" />
