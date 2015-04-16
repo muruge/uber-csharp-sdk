@@ -198,3 +198,4 @@ UberAPI.Library/UberAPI.Library.sln.ide/
 UberAPI.sln.ide/
 App.config
 examples/Uber.Website/Web.config
+src/Uber.SDK/Uber.SDK.nuspec
