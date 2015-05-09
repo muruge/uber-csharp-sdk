@@ -64,7 +64,7 @@ namespace Uber.SDK
 
             if (!string.IsNullOrWhiteSpace(redirectUri))
             {
-                authorizeUrl += string.Concat("&redirectUrl=", HttpUtility.UrlEncode(redirectUri));
+                authorizeUrl += string.Concat("&redirect_uri=", HttpUtility.UrlEncode(redirectUri));
             }
 
             return authorizeUrl;
