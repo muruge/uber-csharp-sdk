@@ -17,10 +17,10 @@ namespace Uber.SDK.Models
         public string Estimate { get; set; }
 
         [JsonProperty(PropertyName = "low_estimate")]
-        public float? LowEstimate { get; set; }
+        public decimal? LowEstimate { get; set; }
 
         [JsonProperty(PropertyName = "high_estimate")]
-        public float? HighEstimate { get; set; }
+        public decimal? HighEstimate { get; set; }
 
         [JsonProperty(PropertyName = "surge_multiplier")]
         public float SurgeMultiplier { get; set; }
